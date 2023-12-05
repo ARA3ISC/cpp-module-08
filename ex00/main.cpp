@@ -17,13 +17,13 @@ int main()
 	try
 	{ // ? vector version
 		std::vector<int> v;
-		for (int i = 0; i < 5; i++)
+		for (int i = 4; i < 6; i++)
 			v.push_back(i);
-		easyfind(v, 4);
+		easyfind(v, 5);
 
 		// ? list version
 		// std::list<int> l;
-		// for (int i = 0; i < 100; i++)
+		// for (int i = 0; i < 47; i++)
 		// 	l.push_back(i);
 
 		// easyfind(l, 99);

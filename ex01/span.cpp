@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:03:02 by maneddam          #+#    #+#             */
-/*   Updated: 2023/11/04 16:54:02 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/12/05 15:51:17 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ Span::~Span() {}
 void Span::addNumber(int n)
 {
 	if (this->_cont.size() < this->_max)
+	{
 		this->_cont.push_back(n);
+		std::cout << "Added successfuly" << std::endl;
+	}
 	else
 		throw std::out_of_range("Span is full");
 }
