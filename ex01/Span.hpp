@@ -10,6 +10,7 @@ class Span
 		std::vector<int> _cont;
 		unsigned int _max;
 	public:
+		Span();
 		Span(unsigned int N);
 		Span(const Span& rhs);
 		Span& operator=(const Span& rhs);

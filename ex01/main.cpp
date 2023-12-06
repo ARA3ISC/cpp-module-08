@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:07:24 by maneddam          #+#    #+#             */
-/*   Updated: 2023/12/05 16:00:04 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:17:59 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,15 @@ int main()
 {
 	try
 	{
-		// Span sp = Span(6);
+		Span sp = Span(6);
 
-		// sp.addNumber(2);
-		// sp.addNumber(32);
-		// sp.addNumber(7);
-		// sp.addNumber(7);
-		// sp.addNumber(53);
-		// sp.addNumber(13);
-		// sp.addNumber(13); // span is full
+		sp.addNumber(2);
+		sp.addNumber(32);
+		sp.addNumber(7);
+		sp.addNumber(7);
+		sp.addNumber(53);
+		sp.addNumber(13);
+		sp.addNumber(13); // span is full
 
 
 

@@ -25,7 +25,6 @@ int main()
 		// std::list<int> l;
 		// for (int i = 0; i < 47; i++)
 		// 	l.push_back(i);
-
 		// easyfind(l, 99);
 
 		// ? deque version
@@ -34,8 +33,7 @@ int main()
 		// q.push_back(1);
 		// q.push_back(45);
 		// q.push_back(98);
-
-		// easyfind(q, 98);}
+		// easyfind(q, 98);
 	}
 	catch (std::exception& e)
 	{

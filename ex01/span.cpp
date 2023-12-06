@@ -6,16 +6,15 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:03:02 by maneddam          #+#    #+#             */
-/*   Updated: 2023/12/05 15:51:17 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/12/06 18:54:05 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
 
-Span::Span(unsigned int N)
-{
-	this->_max = N;
-}
+Span::Span(): _max(0) {}
+
+Span::Span(unsigned int N): _max(N) {}
 
 Span::Span(const Span& rhs)
 {

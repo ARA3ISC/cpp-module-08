@@ -6,11 +6,12 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 18:11:06 by maneddam          #+#    #+#             */
-/*   Updated: 2023/12/05 17:49:35 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/12/06 18:35:51 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MutantStack.hpp"
+
 int main()
 {
 	MutantStack<int> mstack;
