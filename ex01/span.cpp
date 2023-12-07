@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:03:02 by maneddam          #+#    #+#             */
-/*   Updated: 2023/12/06 18:54:05 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/12/07 14:09:30 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,20 +87,8 @@ int Span::longestSpan()
 		throw std::runtime_error("There si just one item in the span");
 	else
 	{
-		int longest = abs(this->_cont[1] - this->_cont[0]);
-		unsigned long int i = 0;
-		while (i < _cont.size())
-		{
-			unsigned long int j = i + 1;
-			while (j < _cont.size())
-			{
-				if (abs(_cont[j] - _cont[i]) > longest)
-					longest = abs(_cont[j] - _cont[i]);
-				j++;
-			}
-			i++;
-		}
-		return longest;
+		std::sort(this->_cont.begin(), this->_cont.end());
+		return *(this->_cont.end() - 1) - *(this->_cont.begin());
 	}
 	return 0;
 }

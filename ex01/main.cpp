@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:07:24 by maneddam          #+#    #+#             */
-/*   Updated: 2023/12/06 19:17:59 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/12/07 14:18:18 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,19 @@ int main()
 {
 	try
 	{
-		Span sp = Span(6);
+		// Span sp = Span(6);
 
-		sp.addNumber(2);
-		sp.addNumber(32);
-		sp.addNumber(7);
-		sp.addNumber(7);
-		sp.addNumber(53);
-		sp.addNumber(13);
-		sp.addNumber(13); // span is full
+		// sp.addNumber(2);
+		// sp.addNumber(32);
+		// sp.addNumber(-7);
+		// sp.addNumber(-6);
+		// sp.addNumber(53);
+		// sp.addNumber(13);
+		// // sp.addNumber(13); // span is full
+
+		// std::cout << "shortest span : " << sp.shortestSpan() << std::endl;
+		// std::cout << "longest span : " << sp.longestSpan() << std::endl;
+		// sp.printSpanElements();
 
 
 
@@ -35,13 +39,13 @@ int main()
 
 
 		// ? get shortest and longest span
-		// Span sp = Span(15);
-		// sp.addNumber(-1);
-		// sp.addNumber(2);
-		// sp.addNumber(0);
-		// sp.addNumber(3);
-		// std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
-		// std::cout << "Longest span: " << sp.longestSpan() << std::endl;
+		Span sp = Span(15);
+		sp.addNumber(-1);
+		sp.addNumber(2);
+		sp.addNumber(0);
+		sp.addNumber(3);
+		std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;
+		std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 		// sp.printSpanElements();
 	}
 	catch(const std::exception& e)
